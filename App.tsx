@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView, Image } from 'react-native';
 
 const App: React.FC = () => {
   const [number, setNumber] = useState<string>('');
   const [results, setResults] = useState<string[]>([]);
 
-//For multiple table
+  //For multiple table
   const generateMultiplicationTable = () => {
     const num = parseInt(number);
     if (!isNaN(num)) {
@@ -17,7 +17,7 @@ const App: React.FC = () => {
     }
   };
 
-//For calculate Factorial
+  //For calculate Factorial
   const calculateFactorial = () => {
     const num = parseInt(number);
     if (!isNaN(num)) {
@@ -29,7 +29,7 @@ const App: React.FC = () => {
     }
   };
 
-//For calculate Square
+  //For calculate Square
   const calculateSquare = () => {
     const num = parseInt(number);
     if (!isNaN(num)) {
@@ -38,7 +38,7 @@ const App: React.FC = () => {
     }
   };
 
-//For prime Factors  
+  //For prime Factors  
   const findPrimeFactors = () => {
     const num = parseInt(number);
     if (!isNaN(num)) {
@@ -63,6 +63,7 @@ const App: React.FC = () => {
 
   return (
     <View style={styles.container}>
+      <Image source={require('./assets/bg.png')} style={styles.image} />
       <Text style={styles.title}>Number Operations</Text>
       <TextInput
         style={styles.input}
@@ -102,10 +103,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#2B0505',
     padding: 20,
   },
+  image: {
+    width: '100%',
+    height: 200,
+    resizeMode: 'cover',
+    marginBottom: 20,
+  },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    color: '#fff',
   },
   input: {
     height: 50,
@@ -127,10 +135,12 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     margin: 5,
+    minWidth: '40%',
   },
   buttonText: {
     color: '#fff',
     fontSize: 18,
+    textAlign: 'center',
   },
   scrollContainer: {
     width: '80%',
@@ -139,6 +149,7 @@ const styles = StyleSheet.create({
   resultText: {
     fontSize: 18,
     marginVertical: 5,
+    color: '#fff',
   },
 });
 

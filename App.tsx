@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 
-const App = () => {
+const App: React.FC = () => {
   const [number, setNumber] = useState<string>('');
   const [results, setResults] = useState<string[]>([]);
 
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#8F1A1A',
+    backgroundColor: '#f5f5f5',
     padding: 20,
   },
   title: {

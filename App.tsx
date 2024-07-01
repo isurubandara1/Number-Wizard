@@ -5,6 +5,7 @@ const App: React.FC = () => {
   const [number, setNumber] = useState<string>('');
   const [results, setResults] = useState<string[]>([]);
 
+//For multiple table
   const generateMultiplicationTable = () => {
     const num = parseInt(number);
     if (!isNaN(num)) {
@@ -16,6 +17,7 @@ const App: React.FC = () => {
     }
   };
 
+//For calculate Factorial
   const calculateFactorial = () => {
     const num = parseInt(number);
     if (!isNaN(num)) {

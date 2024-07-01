@@ -29,6 +29,7 @@ const App: React.FC = () => {
     }
   };
 
+//For calculate Square
   const calculateSquare = () => {
     const num = parseInt(number);
     if (!isNaN(num)) {

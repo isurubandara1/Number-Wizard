@@ -38,6 +38,7 @@ const App: React.FC = () => {
     }
   };
 
+//For prime Factors  
   const findPrimeFactors = () => {
     const num = parseInt(number);
     if (!isNaN(num)) {
@@ -122,7 +123,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   button: {
-    backgroundColor: '#007bff',
+    backgroundColor: '#C59B12',
     padding: 10,
     borderRadius: 5,
     margin: 5,

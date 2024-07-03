@@ -8,12 +8,12 @@ Follow these steps to clone and run the React Native app on your local computer:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/username/repository.git
+    https://github.com/isurubandara1/Number-Wizard.git
     ```
 
 2. **Navigate to the Project Directory**:
     ```bash
-    cd repository
+    cd repositoryName
     ```
 
 3. **Install Dependencies**:

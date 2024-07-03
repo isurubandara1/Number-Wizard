@@ -37,4 +37,4 @@ Follow these steps to clone and run the React Native app on your local computer:
       ```
 # Preview
  
-![Untitled image](https://github.com/isurubandara1/Number-Wizard/assets/111081151/23257aae-f422-4a16-bf31-2300ae6e4299)
+<img src="https://github.com/isurubandara1/Number-Wizard/assets/111081151/23257aae-f422-4a16-bf31-2300ae6e4299" alt="Untitled image" width="300" height="650">
